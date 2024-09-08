@@ -1,0 +1,89 @@
+a{
+    position: relative;
+}
+a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background-color:hsl(26,100%,55%) ;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+}
+a:hover::before{
+    opacity: 1;
+}
+.btn{
+    background-color: hsla(0, 0%, 100%, 0.936);  
+}
+.v{
+    color: hsl(26,100%,55%);
+}
+.cart{
+    background-color: hsl(26,100%,55%);
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+.ico{
+    margin-right: 5px;
+}
+.sp{
+    margin-bottom: 10px;
+}
+.st{
+    margin-bottom: 20px;
+}
+.slectedimg{
+    border: 3px solid hsl(26,100%,55%);
+    filter: blur(0.7px);
+
+}
+.modal-body{
+    height: 200px;
+    text-align: center;
+   
+}
+#exampleModal1 > div{
+    width: 500px !important;
+    height: 500px !important;
+}
+.modal-content{
+    height: 100% !important;
+}
+.kl{
+    margin-left: 95%;
+    margin-top: 10px;
+}
+.ink{
+border-radius: 50%;
+    width: 100px !important;
+height: 100px;
+}
+.leftside{
+    position: relative;
+    left: -70px !important;
+}
+.rightside{
+    position: relative;
+    right:-70px !important
+}
+.modal-content{
+    border: none;
+}
+.carousel-item img{
+object-fit: cover;
+}
+.mainnav{
+    width: 50%;
+}
+.navbar-toggler{
+    border: none !important;
+}
+@media(max-width:768px){
+    .mainnav{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap.min.js">
+        <link rel="stylesheet" href="stely.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid  border-bottom  d-flex justify-content-between  mainnav">
+          <img src="images/logo.svg" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link "href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="ms-auto">
+              <!-- Button trigger modal -->
+<button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <img src="images/icon-cart.svg" width="30" height="24" >
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="exampleModalLabel">Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="cartmodal">
+        Your cart is empty
+      </div>
+    </div>
+  </div>
+</div>
+                  
+                  <img src="images/image-avatar.png" width="30" height="24" >
+                </div>
+          </div>
+        </div>
+      </nav>
+
+<div class="container">
+<div class="row ">
+  <div class="col-lg-6 col-12 rounded-2 ">
+                  <!-- Button trigger modal -->
+                  
+                    <img src="images/image-product-1.jpg" width="100%" height="70%" class="rounded-2 " alt="" id="mainImg" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content  bg-transparent">
+        <button type="button" class="btn-close kl" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body ">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/image-product-1.jpg" width="100%"  class="rounded-2 " alt="" id="mainImg">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image-product-2.jpg"  width="100%"  class="rounded-2 " alt="" id="mainImg">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image-product-3.jpg"  width="100%"  class="rounded-2 " alt="" id="mainImg">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image-product-4.jpg"  width="100%"  class="rounded-2 " alt="" id="mainImg">
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon  ink leftside" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon rightside  ink" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="row mt-2">
+          <div class="col-3"><img src="images/image-product-1-thumbnail.jpg" alt="" width="100%"  class="rounded mk" ></div>
+          <div class="col-3"><img src="images/image-product-2-thumbnail.jpg" alt="" width="100%"  class="rounded mk" ></div>
+          <div class="col-3"><img src="images/image-product-3-thumbnail.jpg" alt="" width="100%"  class="rounded mk" ></div>
+          <div class="col-3"><img src="images/image-product-4-thumbnail.jpg" alt="" width="100%"  class="rounded mk" ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-2">
+  <div class="col-3"><img src="images/image-product-1.jpg" alt="" width="100%"  class="rounded mk" onclick="changeImg(this,'images/image-product-1.jpg')"></div>
+  <div class="col-3"><img src="images/image-product-2.jpg" alt="" width="100%"  class="rounded mk" onclick="changeImg(this,'images/image-product-2.jpg')"></div>
+  <div class="col-3"><img src="images/image-product-3.jpg" alt="" width="100%"  class="rounded mk" onclick="changeImg(this,'images/image-product-3.jpg')"></div>
+  <div class="col-3"><img src="images/image-product-4.jpg" alt="" width="100%"  class="rounded mk" onclick="changeImg(this,'images/image-product-4.jpg')"></div>
+</div>
+</div>
+<div class="col-lg-6 col-12 p-5 ">
+<h5 class="text-secondary sp">sneakers company</h5>
+<h2 class="fw-bold st"> Fall Limited Edition Sneakers
+</h2>
+<p class="text-secondary sp"> These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they 1l withstand everything the weather can offer.</p>
+<h4 class="d-flex align-items-center gap-2 sp fw-bold">$125.00 <span class="badge bg-secondary">50%</span></h4>
+<del class="text-secondary sp">$250.00</del>
+
+<div class="d-flex align-items-center justify-content-between sp">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn  v" onclick="incrementCounter()">+</button>
+    <button type="button" id="counter" class="btn ">0</button>
+    <button type="button" class="btn  v" onclick="decrementCounter()">-</button>
+    </div>
+    <button class=" flex-fill border-0 rounded  cart ">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Add to cart
+    </button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+<script src="bootstrap.min.js"></script>
+    </body>
+
+</html>
